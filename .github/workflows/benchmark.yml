@@ -1,0 +1,18 @@
+name: benchmark
+
+on: push
+
+jobs:
+  benchmark:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Benchmarking Python scripts
+        run: |
+          echo Benchmarking Python scripts
+          for py_script in Python/*.py; do
+          echo $py_script;
+          time python $py_script;
+          done
