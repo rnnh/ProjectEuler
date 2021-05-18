@@ -12,6 +12,5 @@ jobs:
       - name: Benchmarking Python scripts
         run: |
           for py_script in Python/*.py; do
-          echo $py_script;
-          time python $py_script;
+          time --format "%C \t %E" python $py_script;
           done
