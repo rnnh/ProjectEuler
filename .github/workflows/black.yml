@@ -18,4 +18,4 @@ jobs:
           black: true
           auto_fix: true
           commit_message: 'Fix code style issues with Black'
-          git_name: 'Black_Linter'
+          
