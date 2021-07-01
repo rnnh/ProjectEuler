@@ -10,7 +10,7 @@ jobs:
       - name: Check out Git repository
         uses: actions/checkout@v2
       - name: Install Black linter
-        uses: psf/black@stable
+        run: pip install black
       - name: Run linter
         uses: wearerequired/lint-action@v1
         with:
