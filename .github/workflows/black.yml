@@ -3,16 +3,16 @@ name: Lint
 on: [push, pull_request]
 
 jobs:
-  lint:
+  run-linter:
+    name: Run Black linter
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-python@v2
-      - name: Install Python dependencies
-        run: |
-          pip install pipenv
-          pipenv install --deploy --dev --system
-      - uses: wearerequired/lint-action@v1
+      - name: Check out Git repository
+        uses: actions/checkout@v2
+      - name: Install Black linter
+        uses: psf/black@stable
+      - name: Run linter
+        uses: wearerequired/lint-action@v1
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           black: true
