@@ -7,12 +7,12 @@ def prime_factorise(n):
         n = n / 2
         prime_factors += [2]
     for i in range(3, int(n ** 0.5) + 1, 2):
-        while (n % i == 0):
+        while n % i == 0:
             prime_factors += [i]
             n = n / i
     if n > 2:
         prime_factors += [int(n)]
-    return(prime_factors)
+    return prime_factors
 
 
 def find_lcm(list_of_integers):
@@ -28,10 +28,10 @@ def find_lcm(list_of_integers):
                     common_factors += [factor]
     for factor in common_factors:
         least_common_multiple = least_common_multiple * factor
-    return(least_common_multiple)
+    return least_common_multiple
 
 
-one_to_twenty = list(range(1,21))
+one_to_twenty = list(range(1, 21))
 
 lcm_one_to_twenty = find_lcm(one_to_twenty)
 
