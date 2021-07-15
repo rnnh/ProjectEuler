@@ -8,8 +8,8 @@ def find_nth_prime(n):
     while len(primes) <= n - 1:
         for prime in primes:
             if candidate % prime == 0:
-                    is_prime = False
-                    break
+                is_prime = False
+                break
         if is_prime:
             primes += [candidate]
         candidate += 1
