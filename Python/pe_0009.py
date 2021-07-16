@@ -1,4 +1,4 @@
-#! /bin/usr/python3
+#! /usr/bin/python3
 
 
 def find_pythagorean_triplet_product():
