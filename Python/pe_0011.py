@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 
-from numpy import prod
+from math import prod
 
 
 def find_largest_product(square_matrix: list, n_factors: int):
