@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 
 
-def find_collatz_seq_len(start_int):
+def find_collatz_seq_len(start_int: int):
     collatz_seq = [start_int]
     while collatz_seq[-1] != 1:
         if collatz_seq[-1] % 2 == 0:
@@ -12,7 +12,7 @@ def find_collatz_seq_len(start_int):
     return len(collatz_seq)
 
 
-def find_start_int_of_longest_collatz_seq(limit):
+def find_start_int_of_longest_collatz_seq(limit: int):
     collatz_seq_len = 0
     longest_collatz_seq_len = 0
     start_int_of_longest_collatz_seq = 0
