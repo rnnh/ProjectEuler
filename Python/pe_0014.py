@@ -16,7 +16,7 @@ def find_start_int_of_longest_collatz_seq(limit):
     collatz_seq_len = 0
     longest_collatz_seq_len = 0
     start_int_of_longest_collatz_seq = 0
-    for n in xrange(1, limit):
+    for n in range(1, limit):
         collatz_seq_len = find_collatz_seq_len(n)
         if collatz_seq_len > longest_collatz_seq_len:
             longest_collatz_seq_len = collatz_seq_len
