@@ -10,4 +10,5 @@ def find_largest_prime_factor(n):
     print(int(n))
 
 
-find_largest_prime_factor(600851475143)
+if __name__ == "__main__":
+    find_largest_prime_factor(600851475143)
