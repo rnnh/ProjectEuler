@@ -21,5 +21,6 @@ def find_largest_palindrome():
                 return largest_palindrome
 
 
-largest_three_digit_palindrome = find_largest_palindrome()
-print(largest_three_digit_palindrome)
+if __name__ == "__main__":
+    largest_three_digit_palindrome = find_largest_palindrome()
+    print(largest_three_digit_palindrome)
